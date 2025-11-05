@@ -363,6 +363,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 *Demonstrating clean code, scalable architecture, and modern development practices*
 
-[Live Demo](#) • [Documentation](#) • [Report Bug](#)
+[Live Demo](https://credflow-xdcf.onrender.com) • [Documentation](#) • [Report Bug](mailto:vendotha@gmail.com)
 
 </div>
