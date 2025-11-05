@@ -1,3 +1,4 @@
+```mermaid
 flowchart TB
     subgraph Client["Frontend: Next.js + Clerk"]
         A[Sign Up / Sign In]
@@ -37,3 +38,8 @@ flowchart TB
     Purchases -.->|Transaction| Referrals
     Users -.->|Transaction| Referrals
     Users -.->|Transaction| Purchases
+    
+    style Client fill:#e1f5ff,stroke:#0288d1,stroke-width:2px
+    style Backend fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style DB fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+```
