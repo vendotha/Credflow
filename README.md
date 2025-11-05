@@ -3,7 +3,8 @@
 > A comprehensive referral and credit program for digital product platforms. Users can register, share unique referral links, earn credits on first-purchase conversions, and track detailed metrics through an intuitive dashboard.
 
 ---
-## Live Demo : [Click Here](https://credflow-xdcf.onrender.com) 
+## Live Demo : [Click Here](https://credflow-xdcf.onrender.com)      
+## Walk Through Video : [Click Here](https://youtu.be/NWxCYzm4KTA)
 
 ---
 
