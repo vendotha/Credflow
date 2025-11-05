@@ -1,0 +1,37 @@
+
+src/middleware/auth.ts:2:10 - error TS2305: Module '"@clerk/express"' has no exported member 'ClerkExpressWithAuth'.
+
+2 import { ClerkExpressWithAuth, RequestWithAuth } from '@clerk/express';
+           ~~~~~~~~~~~~~~~~~~~~
+
+src/middleware/auth.ts:2:32 - error TS2305: Module '"@clerk/express"' has no exported member 'RequestWithAuth'.
+
+2 import { ClerkExpressWithAuth, RequestWithAuth } from '@clerk/express';
+                                 ~~~~~~~~~~~~~~~
+
+src/routes/purchase.ts:6:10 - error TS2305: Module '"@clerk/express"' has no exported member 'RequestWithAuth'.
+
+6 import { RequestWithAuth } from '@clerk/express';
+           ~~~~~~~~~~~~~~~
+
+src/routes/referral.ts:6:10 - error TS2305: Module '"@clerk/express"' has no exported member 'RequestWithAuth'.
+
+6 import { RequestWithAuth } from '@clerk/express';
+           ~~~~~~~~~~~~~~~
+
+src/routes/user.ts:6:10 - error TS2305: Module '"@clerk/express"' has no exported member 'RequestWithAuth'.
+
+6 import { RequestWithAuth } from '@clerk/express';
+           ~~~~~~~~~~~~~~~
+
+
+Found 5 errors in 4 files.
+
+Errors  Files
+     2  src/middleware/auth.ts:2
+     1  src/routes/purchase.ts:6
+     1  src/routes/referral.ts:6
+     1  src/routes/user.ts:6
+
+
+
