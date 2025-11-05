@@ -1,4 +1,3 @@
-```mermaid
 flowchart LR
   subgraph Client[Frontend: Next.js + Clerk]
     A[Sign Up / Sign In] -->|JWT| B[Dashboard]
@@ -6,7 +5,7 @@ flowchart LR
     B -->|GET /api/referrals/stats| API
     B -->|POST /api/purchases| API
     B -->|POST /api/users/init| API
-    B -->|POST /api/referrals/bind (r=code)| API
+    B -->|POST /api/referrals/bind| API
   end
 
   subgraph API[Backend: Express + Mongoose]
@@ -16,12 +15,16 @@ flowchart LR
     Auth --> Purchases
 
     subgraph DB[(MongoDB Atlas)]
-      Users[(Users)]
-      Referrals[(Referrals)]
-      Purchases[(Purchases)]
+      U[(Users)]
+      R[(Referrals)]
+      P[(Purchases)]
     end
 
-    Purchases -->|Tx| Referrals
-    Users -->|Tx| Referrals
-    Users -->|Tx| Purchases
+    Users --> U
+    Referrals --> R
+    Purchases --> P
+
+    Purchases -->|Transaction| Referrals
+    Users -->|Transaction| Referrals
+    Users -->|Transaction| Purchases
   end
